@@ -1,0 +1,142 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #305299;
+  color: #4dc2bd;
+  color: #108b82;
+  color: #3c82c4;
+  color: #429f98;
+}
+html {
+  font-family: "Lato", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 3vh;
+}
+
+#headerLeft {
+}
+#headerLeft img {
+  width: 200px;
+}
+
+#headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeBtn {
+}
+
+.navBtn {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 60;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 5px 30px;
+  margin: 0px 5px;
+}
+.navBtn:hover {
+  background-color: #3c82c4;
+  /* opacity: 0.5; */
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#newsBtn {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  opacity: 1;
+  background: linear-gradient(-45deg, #1973be, #faa519, #69cd28);
+  animation: change 10s ease-in-out infinite;
+  position: relative;
+  background-size: 400% 400%;
+  border-radius: 10px;
+}
+
+#intBtn {
+}
+
+#countBtn {
+}
+/*  culoare de bagat in animatie (eventual) #3c82c4*/
+#animatie {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #108b82, #429f98, #4dc2bd);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+#jobShop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homePage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jobShop img {
+  border: 3px solid white;
+  color: white;
+
+  padding: 3rem 10rem;
+  border-radius: 10px;
+}
+/*  culoare de bagat in animatie (eventual) #3c82c4*/
+#newsLetter {
+  /* width: 100%; */
+  height: 100vh;
+  /* background: linear-gradient(-135deg, #108b82, #429f98, #4dc2bd); */
+  /* background-size: 400% 400%; */
+  /* position: relative; */
+  /* animation: change 10s ease-in-out infinite; */
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
