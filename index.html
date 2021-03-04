@@ -7,6 +7,7 @@
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>JobShop | BEST Iași</title>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body id="animatie">
     <div id="containerSite">
@@ -17,16 +18,28 @@
 
         <div id="headerRight">
           <a class="navBtn" id="homeBtn" href="#homepage">Home</a>
-          <a class="navBtn" id="intBtn" href="">Introduction</a>
-          <a class="navBtn" id="countBtn" href="">Countdown</a>
+          <a class="navBtn" id="intBtn" href="#intro">Introduction</a>
+          <a class="navBtn" id="countBtn" href="#countDown">Countdown</a>
           <a class="navBtn" id="newsBtn" href="#newsLetter">Newsletter</a>
         </div>
       </div>
 
       <div id="homePage">
-        <div id="jobShop">
+        <div class="notsticky" id="jobShop">
           <img src="images/logo_jobshop_albastru_rgb.png" />
         </div>
+      </div>
+
+      <!-- <script>
+        stickyNavbar();
+      </script> -->
+
+      <div id="intro">
+        <h2>Aici vor fi informatiile</h2>
+      </div>
+
+      <div id="countDown">
+        <h2>Aici va fi Countdown-ul</h2>
       </div>
 
       <div id="newsLetter">
@@ -37,7 +50,5 @@
         </h2>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>

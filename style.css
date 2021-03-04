@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  z-index: 2;
 }
 
 #header {
@@ -31,10 +32,17 @@ body {
   margin: auto;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 3vh;
+  padding: 1.5vh 100vh;
+  z-index: 1;
+  background-color: #305299;
+}
+
+#header img {
+  background-repeat: no-repeat;
 }
 
 #headerLeft {
+  margin-right: 50vh;
 }
 #headerLeft img {
   width: 200px;
@@ -118,16 +126,31 @@ body {
   border-radius: 10px;
 }
 /*  culoare de bagat in animatie (eventual) #3c82c4*/
-#newsLetter {
-  /* width: 100%; */
-  height: 100vh;
-  /* background: linear-gradient(-135deg, #108b82, #429f98, #4dc2bd); */
-  /* background-size: 400% 400%; */
-  /* position: relative; */
-  /* animation: change 10s ease-in-out infinite; */
+
+.sticky {
+  opacity: 0%;
 }
 
-@keyframes change {
+.notsticky {
+  opacity: 100%;
+}
+
+#intro {
+  text-align: center;
+  height: 40vh;
+}
+
+#countDown {
+  text-align: center;
+  height: 50vh;
+}
+
+#newsLetter {
+  height: 100vh;
+  text-align: center;
+}
+
+. @keyframes change {
   0% {
     background-position: 0 50%;
   }
@@ -140,3 +163,10 @@ body {
     background-position: 0 50%;
   }
 }
+
+/* git add . */
+/* git commit -m "fixed nav bar" */
+
+/* git checkout master */
+/* git merge fix-navBar */
+/* git push */
